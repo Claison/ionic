@@ -1,0 +1,31 @@
+<ion-app>
+  <ion-split-pane>
+    <ion-menu>
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-item>
+        <ion-avatar slot="start">
+        <img src="https://avatars0.githubusercontent.com/u/30608657?s=400&v=4">
+       </ion-avatar>
+       <ion-label>Claison Marques da Nóbrega</ion-label>
+      </ion-item>
+      <ion-searchbar></ion-searchbar>
+      <ion-content>
+        <ion-list >
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
+              <ion-icon slot="start" [name]="p.icon"></ion-icon>
+              <ion-label color="primary">
+                {{p.title}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>
