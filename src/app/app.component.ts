@@ -17,7 +17,7 @@ export class AppComponent {
     },
     {
       title: 'PERIODIZAÇÃO',
-      url: '/home',
+      url: '/periodizacao',
       icon: 'calendar'
     },
     {
