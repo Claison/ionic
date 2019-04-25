@@ -10,7 +10,8 @@ const routes: Routes = [
   { path: 'form-treino', loadChildren: './paginas/form-treino/form-treino.module#FormTreinoPageModule' },
   { path: 'exercicio', loadChildren: './paginas/exercicio/exercicio.module#ExercicioPageModule' },
   { path: 'editar-perfil', loadChildren: './paginas/editar-perfil/editar-perfil.module#EditarPerfilPageModule' },
-  { path: 'registro', loadChildren: './paginas/registro/registro.module#RegistroPageModule' }
+  { path: 'registro', loadChildren: './paginas/registro/registro.module#RegistroPageModule' },  { path: 'chat', loadChildren: './paginas/chat/chat.module#ChatPageModule' }
+
 
 ];
 
