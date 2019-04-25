@@ -23,7 +23,12 @@ export class AppComponent {
     {
       title: 'TREINO',
       url: '/treino',
-      icon: 'calendar'
+      icon: 'clipboard'
+    },
+    {
+      title: 'EXERCICIO',
+      url: '/exercicio',
+      icon: 'walk'
     }
   ];
 

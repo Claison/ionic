@@ -1,9 +1,64 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>form periodizacao</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content padding>
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title>NOVA PERIODIZAÇÃO</ion-title>
+      <ion-buttons slot="end">
+          <ion-menu-button color="ligth"></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content padding class="animated fadeIn login auth-page">
+<ion-item>
+  <ion-label position="floating">Nome</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+
+<ion-item>
+    <ion-label position="floating" >Data Inicial</ion-label>
+    <ion-datetime displayFormat="DD/MM/YYYY" min="1994-03-14" max="2050-12-09" value=""></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+      <ion-label position="floating" >Data Final</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY" min="1994-03-14" max="2050-12-09" value=""></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Objetivo</ion-label>
+        <ion-select value="" okText="Ok" cancelText="Cancelar">
+          <ion-select-option value="brown">Brown</ion-select-option>
+          <ion-select-option value="blonde">Blonde</ion-select-option>
+          <ion-select-option value="black">Black</ion-select-option>
+          <ion-select-option value="red">Red</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>Objetivo</ion-label>
+          <ion-select value="" okText="Ok" cancelText="Cancelar">
+            <ion-select-option value="brown">Brown</ion-select-option>
+            <ion-select-option value="blonde">Blonde</ion-select-option>
+            <ion-select-option value="black">Black</ion-select-option>
+            <ion-select-option value="red">Red</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Description</ion-label>
+          <ion-textarea></ion-textarea>
+        </ion-item>
+        
+
+        <ion-row>
+            <ion-col col-6>
+                <ion-button color="primary">Salvar</ion-button>
+            </ion-col>
+            <ion-col col-6>
+                <ion-button color="danger">Cancelar</ion-button>
+            </ion-col>
+          </ion-row>
 
 </ion-content>
